@@ -1,331 +1,62 @@
-# 🏛️ Local Government Website Starter Kit
+# BetterTaclobanCity
 
-A modern, multilingual, and accessible website template designed specifically for local government units (LGUs) in the Philippines. Built with React, TypeScript, and Tailwind CSS.
+An independent community preview for finding Tacloban City services, discovering local places, and accessing public information.
 
-## ✨ Features
+This project is a customized **GitHub fork of [iyanski/betterlocalgov](https://github.com/iyanski/betterlocalgov)**, the Better Local Gov starter listed on [BetterLGU’s community templates](https://lgu.bettergov.ph/TEMPLATES). The React, TypeScript, Vite, Tailwind, Kapwa, router, and SEO foundation is retained. Original documentation is preserved in [UPSTREAM_README.md](UPSTREAM_README.md) and the upstream CC0 dedication in [LICENSE](LICENSE).
 
-- **🌐 Multilingual Support**: English, Filipino, Cebuano, and other Philippine languages
-- **📱 Responsive Design**: Mobile-first approach with modern UI/UX
-- **♿ Accessibility**: WCAG 2.1 compliant design
-- **📝 Content Management**: YAML-based content system for easy updates
-- **🎨 Customizable**: Easy theming and branding customization
-- **⚡ Fast Performance**: Built with Vite for optimal loading speeds
-- **🔍 SEO Optimized**: Built-in SEO with react-helmet, meta tags, and Open Graph support
+## Local preview
 
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Node.js 18+
-- npm or yarn
-- Git
-
-### Installation
-
-1. **Fork the repository**
-   - Visit https://github.com/iyanski/betterlocalgov
-   - Click the "Fork" button in the top right
-   - This creates your own copy of the repository
-
-2. **Clone your forked repository**
-
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/betterlocalgov.git
-   cd betterlocalgov
-   ```
-
-   Replace `YOUR-USERNAME` with your GitHub username.
-
-3. **Add upstream remote** (to get updates from the original repo)
-
-   ```bash
-   git remote add upstream https://github.com/iyanski/betterlocalgov.git
-   ```
-
-4. **Install dependencies**
-
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-
-5. **Run the setup script**
-
-   ```bash
-   npm run setup
-   ```
-
-   This will guide you through configuring your government's information.
-
-6. **Start development server**
-
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-
-7. **Open your browser**
-   Navigate to `http://localhost:5173`
-
-## 📚 Documentation
-
-- **[STARTER-KIT-README.md](STARTER-KIT-README.md)** - Complete setup and customization guide
-- **[CONTENT-GUIDE.md](CONTENT-GUIDE.md)** - Content writing and contribution guidelines
-- **[CONTENT-MANAGEMENT.md](CONTENT-MANAGEMENT.md)** - Guide for non-technical users to edit and manage website content
-- **[DEPLOYMENT-GUIDE.md](DEPLOYMENT-GUIDE.md)** - Deployment instructions for Vercel and other platforms
-- **[STARTER-KIT-SUMMARY.md](STARTER-KIT-SUMMARY.md)** - Audit results and implementation summary
-- **[CHANGELOG.md](CHANGELOG.md)** - Version history and release notes
-- **[docs/meilisearch.md](docs/meilisearch.md)** - Meilisearch search setup and integration guide
-
-## 🎯 Perfect For
-
-- **Local Government Units** (Cities, Municipalities, Provinces)
-- **Government IT Departments** looking for modern web solutions
-- **Web Development Agencies** serving government clients
-- **Civic Technology Organizations** building government tools
-- **Government Officials** wanting professional online presence
-
-## ⚡ Quick Setup (3-5 hours to live website)
-
-1. **Fork & Clone** (5 minutes)
-   - Fork the repository on GitHub (click "Fork" at https://github.com/iyanski/betterlocalgov)
-   - Clone your fork:
-
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/betterlocalgov.git
-   cd betterlocalgov
-   git remote add upstream https://github.com/iyanski/betterlocalgov.git
-   npm install
-   ```
-
-   Replace `YOUR-USERNAME` with your GitHub username.
-
-2. **Configure Your Government** (15 minutes)
-
-   ```bash
-   npm run setup
-   # Interactive setup guides you through configuration
-   ```
-
-3. **Customize Content** (2-4 hours)
-   - Edit service information in `content/services/`
-   - Add government department info in `content/government/`
-   - Update contact information and branding
-
-4. **Deploy to Production** (15 minutes)
-   - Connect to Vercel for free hosting
-   - Set up custom domain (optional)
-   - Your website is live!
-
-## 🌟 What Makes This Different
-
-### **Built for Philippine LGUs**
-
-- **Multilingual**: English, Filipino, Cebuano, and other local languages
-- **Local Context**: Designed for Philippine government structure
-- **Cultural Sensitivity**: Respects local customs and practices
-- **Accessibility**: WCAG 2.1 compliant for all citizens
-
-### **Non-Technical Friendly**
-
-- **YAML Content Management**: Easy content updates without coding
-- **Visual Setup**: Interactive configuration process
-- **Clear Documentation**: Step-by-step guides for everything
-- **Template System**: Pre-built content templates
-
-### **Modern & Professional**
-
-- **Mobile-First**: Works perfectly on all devices
-- **Fast Loading**: Optimized for performance
-- **SEO Ready**: Built-in search engine optimization
-- **Secure**: Modern security best practices
-
-## 🛠️ Development
-
-### Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
-- `npm run lint:fix` - Fix ESLint issues
-- `npm run format` - Format code with Prettier
-- `npm run setup` - Run setup script for new installations
-- `npm run convert-yaml` - Convert YAML to JSON
-- `npm run dev:yaml` - Convert YAML and start dev server
-
-### Project Structure
-
-```
-content/
-├── government/         # Government section markdown & YAML
-│   └── departments/    # Department pages (executive, legislative, etc.)
-└── services/           # Services section markdown & YAML
-
-src/
-├── components/         # Reusable UI components
-│   ├── home/           # Home page components
-│   ├── layout/         # Layout components (Navbar, Footer)
-│   └── ui/             # Basic UI components
-├── data/               # YAML configuration (services.yaml, government.yaml)
-├── i18n/               # Internationalization
-├── lib/                # Utility functions (markdownLoader, yamlLoader)
-├── pages/              # Page components (Home, Services, Government, Document)
-└── types/              # TypeScript type definitions
-```
-
-## 👥 Contributors
-
-- **[iyanski](https://github.com/iyanski)** — Project creator and maintainer
-- **[Nicu Listana](https://github.com/niculistana)** — Contributor
-
-## 🤝 Contributing
-
-We welcome contributions from everyone! Whether you're a developer, government official, or community member, there are many ways to help improve this project.
-
-### 🌟 For Non-Technical Contributors
-
-**No coding experience required!** You can contribute valuable content and improvements using GitHub's web interface.
-
-#### Quick Start for Non-Technical Users
-
-1. **Create a GitHub account** (free at github.com)
-2. **Navigate to the repository** in your web browser
-3. **Use our detailed guide**: [CONTENT-MANAGEMENT.md](CONTENT-MANAGEMENT.md) - Complete step-by-step instructions for editing content without any technical knowledge
-
-#### What You Can Contribute
-
-- **📝 Content Updates**: Fix outdated information, add new services, improve descriptions
-- **🌐 Translations**: Help translate content to Filipino, Cebuano, or other local languages
-- **📋 Service Information**: Add details about government services, requirements, and processes
-- **🔍 Content Review**: Check for accuracy, clarity, and completeness
-- **💡 Suggestions**: Propose new features or improvements
-
-#### How to Contribute (No Git Required)
-
-1. **Find content to edit**:
-   - Go to `content/services/` for service pages or `content/government/` for department pages
-   - Choose a category (health, education, business, departments, etc.)
-   - Click on any `.md` file to edit
-
-2. **Make your changes**:
-   - Click the pencil icon (✏️) to edit
-   - Update the content using simple text formatting
-   - Add new information, fix errors, or improve clarity
-
-3. **Save your changes**:
-   - Write a brief description of what you changed
-   - Click "Commit changes"
-   - Your changes will be reviewed and merged
-
-#### Content Types You Can Edit
-
-- **Service Descriptions**: How to apply for permits, scholarships, health services
-- **Requirements**: Documents needed, eligibility criteria, deadlines
-- **Contact Information**: Office locations, phone numbers, hours
-- **Process Steps**: Step-by-step instructions for government services
-- **Translations**: Help make content available in local languages
-
-### 👨‍💻 For Technical Contributors
-
-#### Content Contributors (Basic Technical)
-
-1. **Fork the repository** on GitHub (click "Fork" at https://github.com/iyanski/betterlocalgov)
-2. **Clone your fork**: `git clone https://github.com/YOUR-USERNAME/betterlocalgov.git`
-3. **Add upstream remote**: `git remote add upstream https://github.com/iyanski/betterlocalgov.git`
-4. **Create a content branch**: `git checkout -b content/update-health-services`
-5. **Edit content files** in `content/`
-6. **Test your changes**: `npm run dev`
-7. **Submit a pull request** to the original repository
-
-#### Developers
-
-1. **Fork the repository** on GitHub (click "Fork" at https://github.com/iyanski/betterlocalgov)
-2. **Clone your fork**: `git clone https://github.com/YOUR-USERNAME/betterlocalgov.git`
-3. **Add upstream remote**: `git remote add upstream https://github.com/iyanski/betterlocalgov.git`
-4. **Create a feature branch**: `git checkout -b feature/new-component`
-5. **Make your changes**
-6. **Run tests**: `npm run lint && npm run build`
-7. **Submit a pull request** to the original repository
-
-#### Keeping Your Fork Updated
-
-To get the latest changes from the original repository:
+Use a current Node version supported by the locked Vite toolchain.
 
 ```bash
-# Fetch the latest changes from upstream
-git fetch upstream
-
-# Switch to your main branch
-git checkout main
-
-# Merge upstream changes into your main branch
-git merge upstream/main
-
-# Push updates to your fork on GitHub
-git push origin main
+npm ci
+npm run build
+npm run preview:local
 ```
 
-**Best Practice**: Always sync your fork before creating a new branch for contributions.
+The build is served at **http://127.0.0.1:5187**. Only the `dist/` directory is exposed. Source files, Git metadata, and environment files are excluded from the HTTP surface. SPA routes support refreshes. The preview sends no-index headers and applies a same-origin content security policy.
 
-### 📋 Contribution Guidelines
+For development with live rebuilds:
 
-#### Content Guidelines
+```bash
+npm run dev -- --host 127.0.0.1 --port 5188 --strictPort
+```
 
-- **Accuracy First**: Ensure all information is current and correct
-- **Clear Language**: Write for the general public, avoid jargon
-- **Complete Information**: Include all necessary details (requirements, steps, contacts)
-- **Local Context**: Consider the specific needs of your community
-- **Accessibility**: Use clear headings, simple language, and logical structure
+To put the built preview on an already authenticated Tailscale machine, use an unused Serve HTTPS port:
 
-#### Technical Guidelines
+```bash
+tailscale serve --bg --https=9447 http://127.0.0.1:5187
+tailscale serve status
+```
 
-- Follow existing code style and patterns
-- Test your changes thoroughly
-- Update documentation when needed
-- Ensure mobile responsiveness
-- Maintain accessibility standards
+This is tailnet-only access. No Tailscale Funnel or public web hosting is used. The local server must stay running and the machine must stay online. On the original development host, `bettertaclobancity-preview.service` is a user transient systemd service that keeps the server running after the chat; it lasts until stopped or the host reboots.
 
-### 🎯 Priority Areas for Contribution
+## Preview features
 
-1. **Content Accuracy**: Update outdated information, fix errors
-2. **Localization**: Translate content to Filipino, Cebuano, and other Philippine languages
-3. **Service Coverage**: Add missing government services and programs
-4. **User Experience**: Improve clarity and ease of use
-5. **Accessibility**: Ensure content is accessible to all citizens
+- Responsive Tacloban identity, self-hosted typography, and credited San Juanico Bridge photography.
+- Twelve service pathways, with resident/business/visitor filters, phrase and keyword search, empty states, and detail dialogs.
+- City office directory, local tourism links, public disclosure, ordinances, and procurement destinations.
+- Official emergency directory and PAGASA bulletin links.
+- `/services`, `/services/residents`, `/services/business`, `/services/visitors`, `/government`, and `/about` routes.
+- Keyboard-accessible native dialogs, focus restoration, reduced-motion support, and a mobile navigation menu.
 
-### 🆘 Need Help?
+Service applications, sign-in, and payments happen on the linked official provider. This project does not accept applications, collect payments, receive emergency reports, or claim to represent the City Government or BetterGov.ph.
 
-- **For Content Questions**: Check [CONTENT-MANAGEMENT.md](CONTENT-MANAGEMENT.md)
-- **For Technical Issues**: Open an issue on GitHub
-- **For General Questions**: Contact the project maintainers
+## Content and sources
 
-### 🏆 Recognition
+Curated local service data lives in `src/data/tacloban-services.ts`. The page sections use the starter’s component structure under `src/components` and `src/pages`.
 
-All contributors are recognized in our project documentation. Your contributions help make government services more accessible to all citizens!
+Links were checked November 3, 2026 against [Tacloban City](https://tacloban.gov.ph/), its [Citizen’s Charter](https://tacloban.gov.ph/citizens-charter/), [office directory](https://tacloban.gov.ph/departments/), and [eBOSS portal](https://eboss.tacloban.gov.ph/). Requirements and availability must be checked with official providers. The original starter’s unused sample content remains in the source for future adaptation and is not routed into the preview.
 
-## 📄 License
+Image and font attribution is available in the page’s Sources & photo credits dialog and `public/assets/tacloban/CREDITS.txt`. The San Juanico image by Mermarquez remains CC BY-SA 4.0; Figtree is under the SIL Open Font License.
 
-This project is licensed under the Creative Commons Zero (CC0) License - see the [LICENSE](LICENSE) file for details.
+## Validation
 
-**CC0 License Benefits:**
+```bash
+npm run build
+npm run verify:preview
+```
 
-- **Public Domain**: No restrictions on use, modification, or distribution
-- **Government Friendly**: Perfect for public sector projects
-- **Maximum Reusability**: Anyone can use, modify, and distribute freely
-- **No Attribution Required**: Though attribution is appreciated
+The render checks cover home content, all twelve official destinations, the initial and complete service list, category filters, phrase/keyword search, and the empty state. This is not an interactive browser or physical-device test. Visual browser QA was unavailable because local browser access was disabled in the task environment.
 
-## 🙏 Acknowledgments
-
-- Built with [React](https://reactjs.org/)
-- Styled with [Tailwind CSS v4](https://tailwindcss.com/)
-- UI components by [@bettergov/kapwa](https://github.com/bettergov/kapwa)
-- Icons by [Lucide React](https://lucide.dev/)
-- Content management with [YAML](https://yaml.org/)
-- Internationalization with [i18next](https://www.i18next.com/)
-
----
-
-**Made with ❤️ for Philippine Local Government Units**
+No production website deployment is part of this preview.

@@ -1,0 +1,8 @@
+San Juanico Bridge from above
+Photographer: Mermarquez / Wikimedia Commons
+Source: https://commons.wikimedia.org/wiki/File:San_Juanico_Bridge_from_above.jpg
+License: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/
+Changes: resized and compressed to WebP; cropped in page layout. Image remains under CC BY-SA 4.0.
+
+Figtree: SIL Open Font License 1.1, see FIGTREE-LICENSE.txt.
+Better Local Gov starter: https://github.com/iyanski/betterlocalgov CC0 1.0, see repository LICENSE.

@@ -1,5 +1,5 @@
 {
-  "name": "betterlocalgov",
+  "name": "bettertaclobancity",
   "private": true,
   "version": "0.3.0",
   "type": "module",
@@ -15,7 +15,9 @@
     "convert-yaml": "node scripts/yaml-to-json.js",
     "dev:yaml": "npm run convert-yaml && npm run dev",
     "setup": "node scripts/setup-starter-kit.js",
-    "index-content": "node scripts/index-content.mjs"
+    "index-content": "node scripts/index-content.mjs",
+    "preview:local": "node preview-server.mjs",
+    "verify:preview": "node scripts/verify-tacloban.mjs"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
